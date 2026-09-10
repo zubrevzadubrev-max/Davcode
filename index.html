@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DavCode — короткие уроки Python, HTML и CSS, практика и тесты для начинающих.">
+  <meta name="theme-color" content="#4b5ee8">
+  <title>DavCode — учись и создавай</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data.js" defer></script>
+  <script src="./certificate.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home"><img src="./favicon.svg" width="42" height="42" alt=""><span>Dav<span class="accent">Code</span><small>учись и создавай</small></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"></button>
+    <div class="nav-wrap" id="navigation">
+      <p class="nav-label">ТВОЁ ОБУЧЕНИЕ</p>
+      <nav aria-label="Основная навигация" id="nav"></nav>
+      <div class="sidebar-note"><span class="note-star">✦</span><b>Большое начинается<br>с первой строки</b><p>Учись в своём темпе.<br>У тебя всё получится.</p></div>
+      <button class="theme-toggle" id="theme-toggle"></button>
+      <div class="student"><span class="avatar">&lt;/&gt;</span><span><b>Начинающий разработчик</b><small>Твоё новое увлечение</small></span></div>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">Главная</span><span class="topbar-tag"><span class="green-dot"></span>Бесплатно. В твоём темпе.</span></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>DavCode · Русинов Давид · 11А класс</span><span>Сделано с интересом к коду <span class="accent">&lt;/&gt;</span></span></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="reset-dialog"><h2>Сбросить прогресс?</h2><p>Уроки, задания и результаты тестов будут обнулены. Имя, класс и тема сохранятся.</p><div class="actions"><button class="secondary" id="cancel-reset">Отмена</button><button class="danger" id="confirm-reset">Сбросить прогресс</button></div></dialog>
+</body>
+</html>
