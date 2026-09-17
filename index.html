@@ -8,9 +8,13 @@
   <title>DavCode — учись и создавай</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./enhancements.css">
   <script src="./data.js" defer></script>
+  <script src="./extra-data.js" defer></script>
   <script src="./certificate.js" defer></script>
   <script src="./app.js" defer></script>
+  <script src="./music.js" defer></script>
+  <script src="./audio.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -26,11 +30,11 @@
     </div>
   </aside>
   <div class="workspace">
-    <header class="topbar"><span id="breadcrumb">Главная</span><span class="topbar-tag"><span class="green-dot"></span>Бесплатно. В твоём темпе.</span></header>
+    <header class="topbar"><span id="breadcrumb">Главная</span><div class="topbar-tools"><button id="open-player" class="secondary" aria-label="Открыть музыкальный плеер" aria-controls="music-player" aria-expanded="false"></button><button id="open-settings" class="secondary" aria-label="Настройки звука"></button></div><span class="topbar-tag"><span class="green-dot"></span>Бесплатно. В твоём темпе.</span></header>
     <main id="main" tabindex="-1"></main>
     <footer><span>DavCode · Русинов Давид · 11А класс</span><span>Сделано с интересом к коду <span class="accent">&lt;/&gt;</span></span></footer>
   </div>
   <div id="toast" role="status" aria-live="polite"></div>
-  <dialog id="reset-dialog"><h2>Сбросить прогресс?</h2><p>Уроки, задания и результаты тестов будут обнулены. Имя, класс и тема сохранятся.</p><div class="actions"><button class="secondary" id="cancel-reset">Отмена</button><button class="danger" id="confirm-reset">Сбросить прогресс</button></div></dialog>
+  <dialog id="reset-dialog"><h2>Сбросить прогресс?</h2><p>Уроки, задания и результаты тестов будут обнулены. Имя, класс, избранное и настройки звука сохранятся. Самопроверки проектов также будут сброшены.</p><div class="actions"><button class="secondary" id="cancel-reset">Отмена</button><button class="danger" id="confirm-reset">Сбросить прогресс</button></div></dialog>
 </body>
 </html>
